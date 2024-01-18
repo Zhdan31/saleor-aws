@@ -31,8 +31,8 @@ services:
     environment:
       - DEBUG=True
       - JAEGER_AGENT_HOST=jaeger
-      - DASHBOARD_URL=http://localhost:9000/
-      - ALLOWED_HOSTS=localhost,api
+      #- DASHBOARD_URL=http://localhost:9000/
+      - ALLOWED_HOSTS=*
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:latest
